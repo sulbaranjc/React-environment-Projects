@@ -108,6 +108,7 @@
     "path-parse": "^1.0.7",
     "hosted-git-info": "^2.8.9",
     "sockjs": "^0.3.20",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "@tootallnate/once": "^3.0.1"
   }
 }
