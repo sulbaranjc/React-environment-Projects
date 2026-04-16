@@ -84,6 +84,7 @@
     "@babel/traverse": "^7.23.2",
     "@babel/helpers": "^7.26.10",
     "@babel/runtime": "^7.26.10",
+    "@babel/runtime-corejs3": "^7.26.10",
     "es5-ext": "^0.10.63",
     "brace-expansion": "^1.1.13",
     "tmp": "^0.2.4",
