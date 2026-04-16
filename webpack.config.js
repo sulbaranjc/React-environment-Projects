@@ -5,7 +5,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    clean: true
   },
   resolve: {
     extensions: [".js", ".jsx"]
@@ -28,13 +29,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(s*.)css$/,
+        test: /\.(s[ac]ss|css)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
           },
           "css-loader",
-          "sass-loader"
+          { loader: "sass-loader", options: { api: "modern" } }
         ]
       }
     ]
